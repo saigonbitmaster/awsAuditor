@@ -1,0 +1,8 @@
+{
+  "name": "awsAuditor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/saigonbitmaster/awsAuditor",
+  "author": "saigonbitmaster <bitmaster.sg@gmail.com>",
+  "license": "MIT"
+}
