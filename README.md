@@ -1,7 +1,7 @@
-AWS has large resources and manage it is not easy. This help:
-- get fast summurized resource report in single view
-- manage the change has made to your aws for example add/remote user, ec2
-- scan and report the risk of security group and iam 
+AWS has large resources and manage usually get long time even for overview. So this code help:
+- Get fast summurized resource report in single view
+- Manage the change has made to your aws for example add/remote user, ec2
+- Scan and report the risk of security group and iam 
 
 #Configuration
 to run the code aws cli and credentials must be installed and configured:
