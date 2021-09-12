@@ -14,7 +14,8 @@ src/config.js
 src/cmds.js 
 
 #This code only use describe commands which get data from aws 
-#NONE OF ADD/MODIFY commands are used in this code 
+
+#NONE OF ADD/MODIFY COMMANDS ARE USED IN THIS CODE to ensure the AWS resouces is SAFE when run the commands.
 
 AWS API: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace.html
 
