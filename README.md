@@ -37,8 +37,17 @@ AWS API: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace
 - yarn run iam: report iam user, group, policies 
 
 #Some output:
-reportName: 'User group report',
-  totalUser: 15,
-  users: 'dev,accountance,dev-gitlab-backup,k3s-admin,prod-dev-product-01-online,prod-singapore-product-01-online,prod-asia-36-product-01-online,s3-asia,s3-asia-06,s3-prod-dev-1,SfApi,asia-36,adminCLI,adminnt@myAccount.vn,trnadmin',
-  totalGroup: 7,
-  groups: 'admin,develop,docker,ec2-access,finance,k3s,test',
+-reportName: 'User group report',
+  - totalUser: 15,
+  - users: '',
+  - totalGroup: 7,
+  - groups: '',
+- reportName: 'Security group report',
+ - total: 10,
+ - groups: 'launch-wizard-2,rke,launch-wizard-1,prod-dev-1,product-01-prod,k3s1,testServer,default,gitlab,MiniWeb',
+ - hasOpenRule: 4,
+ - hasOpenLimitPort: 7,
+ - reportName: 'Ec2 report',
+ - total: 17,
+ - instancesByType: [ { 't2.micro': 8 }, { 't2.small': 7 }, { 't2.medium': 2 } ],
+ - instancesByPlatform: [ { windows: 1 }, { linux: 16 } ],
