@@ -20,11 +20,13 @@ src/cmds.js
 AWS API: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace.html
 
 #To run the code: 
-git clone https://github.com/saigonbitmaster/awsAuditor
-yarn 
+- git clone https://github.com/saigonbitmaster/awsAuditor
+- yarn 
+- yarn run all
 
 #Commands to get report: 
-yarn run help: to get help for commands
-yarn run sg: to scan all security group then report the rule that may risk e.g too open, open for the limit access port
-yarn run ec2: report ec2 on the account 
-yarn run iam: report iam user, group, policies 
+- yarn run help: to get help for commands
+- yarn run all: to get full report
+- yarn run sg: to scan all security group then report the rule that may risk e.g too open, open for the limit access port
+- yarn run ec2: report ec2 on the account 
+- yarn run iam: report iam user, group, policies 
