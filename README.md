@@ -42,6 +42,9 @@ AWS API: https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/top-level-namespace
   - users: '',
   - totalGroup: 7,
   - groups: '',
+  -  UserPolicyList: '',
+  - GroupList: 'test,docker',
+  -  AttachedManagedPolicies: 'test'
 - reportName: 'Security group report',
    - total: 10,
    - groups: 'launch-wizard-2,rke,launch-wizard-1,prod-dev-1,product-01-prod,k3s1,testServer,default,gitlab,MiniWeb',
