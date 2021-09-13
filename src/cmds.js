@@ -23,7 +23,7 @@ const listBuckets = (cb) => {
   });
 };
 const listObjects = (bucket, cb) => {
-  var params = {
+  const params = {
     Bucket: bucket,
     MaxKeys: 2,
   };
@@ -36,7 +36,7 @@ const listObjects = (bucket, cb) => {
 };
 
 const getBucketAcl = (bucket, cb) => {
-  var params = {
+  const params = {
     Bucket: bucket,
   };
   s3.getBucketAcl(params, function (err, data) {
@@ -57,7 +57,7 @@ const getAccountAuthorizationDetails = (
   filter = ["User", "Role", "Group", "LocalManagedPolicy", "AWSManagedPolicy"],
   cb
 ) => {
-  var params = {
+  const params = {
     Filter: filter, //No filter to get all
     MaxItems: 1000,
   };
@@ -70,7 +70,7 @@ const getAccountAuthorizationDetails = (
   });
 };
 const getUsers = (cb) => {
-  var params = {
+  const params = {
     Filter: ["User"], //No filter to get all
     MaxItems: 1000,
   };
@@ -99,7 +99,7 @@ const getUsers = (cb) => {
 };
 
 const getGroups = (cb) => {
-  var params = {
+  const params = {
     Filter: ["Group"], //No filter to get all
     MaxItems: 1000,
   };
@@ -126,7 +126,7 @@ const getGroups = (cb) => {
 };
 
 const getUserGroups = (cb) => {
-  var params = {
+  const params = {
     Filter: ["Group", "User"], //No filter to get all
     MaxItems: 1000,
   };
@@ -140,7 +140,7 @@ const getUserGroups = (cb) => {
 };
 
 const getRoles = (cb) => {
-  var params = {
+  const params = {
     Filter: ["Role"], //No filter to get all
     MaxItems: 1000,
   };
@@ -162,7 +162,7 @@ const getRoles = (cb) => {
 };
 
 const getInstances = (cb) => {
-  var params = {
+  const params = {
     Filters: [],
   };
   ec2.describeInstances(function (err, data) {
